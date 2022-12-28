@@ -2,4 +2,5 @@ nav, ul {
   display: flex;
   gap: 2em;
   list-style: none;
+  background-color: #b7e4c7;
 }

@@ -30,15 +30,17 @@ function LoginPage() {
 
   return (
     <>
-      <div className='formulario'>
-        <h1>LoginPage</h1>
+      <div className='container'>
+        <div className='formulario'>
+          <h1>LoginPage</h1>
 
-        <form onSubmit={login}>
-          <label>Escribe tu nombre de usuario:</label>
-          <input value={username} onChange={(e) => setUsername(e.target.value)} />
+          <form onSubmit={login}>
+            <label>Escribe tu nombre de usuario:</label>
+            <input value={username} onChange={(e) => setUsername(e.target.value)} />
 
-          <button type="submit">Entrar</button>
-        </form>
+            <button type="submit">Entrar</button>
+          </form>
+        </div>
       </div>
 
       {error && (
