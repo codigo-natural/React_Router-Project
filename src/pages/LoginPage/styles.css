@@ -1,46 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&family=Jost:wght@300;400;500&family=Poppins:wght@300;400;600;800&display=swap");
-h1 {
-  color: #354f52;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 900;
-}
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 6em;
-}
-.formulario {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 15em;
-  height: 15em;
-  margin: 0;
-  border: 1px solid rgb(84, 215, 148);
-}
-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-
-form input {
-  margin-top: 2em;
-}
-input {
-  border-color: aquamarine;
+*,
+::before,
+::after {
+  font-family: poppins;
   outline: none;
 }
 
-button {
-  border: 2px solid rgb(67, 91, 84);
-  margin-top: 0.5em;
-  padding: 5px 0;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
 }
 
-button:hover {
+.formulario {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #ccc;
+}
+
+.formulario h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.formulario form label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.formulario form input {
+  padding: 12px 20px;
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px 0px #ccc;
+  transition: 0.2s ease-in-out;
+}
+
+.formulario form input:hover {
+  box-shadow: 0px 0px 10px 0px #ccc;
+}
+
+.formulario form button {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px 0px #ccc;
+  transition: 0.2s ease-in-out;
   cursor: pointer;
-  background-color: #9bc0c4;
+}
+
+.formulario form button:hover {
+  background-color: #3e8e41;
+  box-shadow: 0px 0px 10px 0px #ccc;
+}
+.error {
+  text-align: center;
+  color: red;
+  font-size: 16px;
+  margin-top: 4px;
 }

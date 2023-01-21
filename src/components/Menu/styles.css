@@ -1,6 +1,33 @@
-nav, ul {
+nav {
   display: flex;
-  gap: 2em;
+  align-items: center;
+  background-color: #1e1e1e94;
+  padding: 0px 20px;
+  height: 3em;
+}
+
+nav ul {
+  display: flex;
   list-style: none;
-  background-color: #b7e4c7;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #4CAF50;
+}
+
+nav ul li a.active {
+  color: red;
 }
